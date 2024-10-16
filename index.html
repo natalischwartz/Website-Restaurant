@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +15,28 @@
     <body>
 
         <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        <a href="#" class=" scrolltop fixed right-1 bottom-20 flex justify-center ítems-center p-1 rounded-3xl z-10" style="background-color: rgba(6,156,84,.5); transition: .4s; width: 30px; height: 30px;" id="scroll-top">
+            <i class='bx bx-chevron-up text-3xl body-color' style="font-size: 1.5rem;"></i>
         </a>
 
         <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav max-w-90 mx-4" style="width: calc(100% -2rem);">
-                <a href="#" class="nav__logo">Tasty</a>
+        <header class="w-full fixed top-0 left-0 z-fixed body-color" id="header">
+            <nav class="max-w-1024 header-height flex justify-between items-center max-w-90 mx-4" style="width: calc(100% -2rem);">
+                <a href="#" class=" nav__logo text-color font-medium">Tasty</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="mb-2"><a href="#home" class="text-color font-medium transition-all  nav__link active-link">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-color font-medium transition-all nav__link ">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-color font-medium transition-all nav__link ">Services</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-color font-medium transition-all nav__link">Menu</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-color font-medium transition-all nav__link ">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
+                <div class="text-color font-medium text-2xl cursor-pointer" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
@@ -45,28 +45,28 @@
         <main class="l-main">
             <!--========== HOME ==========-->
             <section class="home" id="home">
-                <div class="home__container max-w-90 mx-4 bd-grid" style="width: calc(100%-2rem);">
+                <div class="home__container max-w-90 mx-4 grid gap-5" style="width: calc(100%-2rem);">
                     <div class="home__data">
-                        <h1 class="home__title">Tasty food</h1>
-                        <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
-                        <a href="#" class="button">View Menu</a>
+                        <h1 class="biggest-font-size first-color mb-1 ">Tasty food</h1>
+                        <h2 class="h1-font-size title-color mb-4">Try the best food of <br> the week.</h2>
+                        <a href="#" class="button inline-block rounded-lg">View Menu</a>
                     </div>
     
-                    <img src="src/img/home.png" alt="" class="home__img">
+                    <img src="src/img/home.png" alt="" class="home__img" style="width: 300px; justify-self: center;">
                 </div>
             </section>
             
             <!--========== ABOUT ==========-->
             <section class="about section max-w-90 mx-4" id="about" style="width: calc(100%-2rem);">
-                <div class="about__container  bd-grid">
-                    <div class="about__data">
-                        <span class="text-center block first-color font-medium mb-1  about__initial">About us</span>
+                <div class="about__container  grid gap-5">
+                    <div class="text-center">
+                        <span class=" about__data text-center block first-color font-medium mb-1  about__initial">About us</span>
                         <h2 class="text-center h1-font-size mb-3 title-color about__initial">We cook the best <br> tasty food</h2>
-                        <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
-                        <a href="#" class="button">Explore history</a>
+                        <p class="about__description mb-3">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                        <a href="#" class="button inline-block rounded-lg">Explore history</a>
                     </div>
 
-                    <img src="src/img/about.jpg" alt="" class="about__img">
+                    <img src="src/img/about.jpg" alt="" class="about__img rounded-lg ">
                 </div>
             </section>
 
@@ -75,9 +75,9 @@
                 <span class="text-center block first-color font-medium mb-1">Offering</span>
                 <h2 class="text-center h1-font-size mb-3 title-color">Our amazing services</h2>
 
-                <div class="services__container  bd-grid">
-                    <div class="services__content">
-                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                <div class="services__container row-gap-2 grid-cols-2  grid gap-5">
+                    <div class="services__content text-center">
+                        <svg class="services__img mb-2" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249 
                             16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032 
                             23.471 33.9823 25.4807 34.3264 27.4368C34.6403 29.0838 35.6859 30.4987 37.168 
@@ -138,7 +138,7 @@
                             16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                             46.6405 18.816 45.964 18.3989 45.5466Z"/>
                         </svg>
-                        <h3 class="services__title">Excellent food</h3>
+                        <h3 class="services__title h3-font-size title-color mb-1">Excellent food</h3>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
 
@@ -362,41 +362,41 @@
                 <span class="text-center block first-color font-medium mb-1">Special</span>
                 <h2 class="text-center h1-font-size mb-3 title-color">Menu of the week</h2>
 
-                <div class="menu__container bd-grid">
-                    <div class="menu__content">
-                        <img src="src/img/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                <div class="menu__container grid-cols-dos justify-center grid gap-5">
+                    <div class="menu__content relative flex flex-col rounded-lg p-3">
+                        <img src="src/img/plate1.png" alt="" class="menu__img  w-30 mb-2">
+                        <h3 class="menu__name font-semi-bold  title-color normal-font-size  ">Barbecue salad</h3>
+                        <span class="menu__detail small-font-size mb-1">Delicious dish</span>
+                        <span class="menu__preci font-semi-bold title-color small-font-size ">$22.00</span>
+                        <a href="#" class="button inline-block rounded-lg menu__button fixed bottom-0 right-0 "><i class='bx bx-cart-alt'></i></a>
                     </div>
 
-                    <div class="menu__content">
-                        <img src="src/img/plate2.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <div class="menu__content relative flex flex-col rounded-lg p-3">
+                        <img src="src/img/plate2.png" alt="" class="menu__img w-30 mb-2">
+                        <h3 class="menu__name font-semi-bold  title-color normal-font-size  ">Salad with fish</h3>
+                        <span class="menu__detail small-font-size mb-1">Delicious dish</span>
+                        <span class="menu__preci font-semi-bold title-color small-font-size ">$12.00</span>
+                        <a href="#" class="button inline-block rounded-lg menu__button fixed bottom-0 right-0 "><i class='bx bx-cart-alt'></i></a>
                     </div>
                     
-                    <div class="menu__content">
-                        <img src="src/img/plate3.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <div class="menu__content relative flex flex-col rounded-lg p-3">
+                        <img src="src/img/plate3.png" alt="" class="menu__img w-30 mb-2">
+                        <h3 class="menu__name font-semi-bold  title-color normal-font-size  ">Spinach salad</h3>
+                        <span class="menu__detail small-font-size mb-1">Delicious dish</span>
+                        <span class="menu__preci font-semi-bold title-color small-font-size">$9.50</span>
+                        <a href="#" class="button inline-block rounded-lg menu__button fixed bottom-0 right-0 "><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
             </section>
 
             <!--===== APP =======-->
             <section class="app section max-w-90 mx-4" style="width: calc(100%-2rem);">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
+                <div class="app__container grid gap-5">
+                    <div class="app__data text-center">
                         <span class="text-center block first-color font-medium mb-1 app__initial">App</span>
                         <h2 class="text-center h1-font-size mb-3 title-color app__initial">App is aviable</h2>
-                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
-                        <div class="app__stores">
+                        <p class="app__description mb-5">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                        <div class="app__stores mb-4">
                             <a href="#"><img src="src/img/app1.png" alt="" class="app__store"></a>
                             <a href="#"><img src="src/img/app2.png" alt="" class="app__store"></a>
                         </div>
@@ -408,15 +408,15 @@
 
             <!--========== CONTACT US ==========-->
             <section class="contact section max-w-90 mx-4" id="contact" style="width: calc(100%-2rem);">
-                <div class="contact__container bd-grid">
+                <div class="contact__container text-center grid gap-5">
                     <div class="contact__data">
                         <span class="text-center block first-color font-medium mb-1 contact__initial">Let's talk</span>
                         <h2 class="text-center h1-font-size mb-3 title-color contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                        <p class="contact__description mb-3">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                     </div>
 
                     <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
+                        <a href="#" class="button inline-block rounded-lg">Contact us now</a>
                     </div>
                 </div>
             </section>
@@ -424,24 +424,24 @@
 
         <!--========== FOOTER ==========-->
         <footer class="footer section max-w-90 mx-4" style="width: calc(100%-2rem);">
-            <div class="footer__container bd-grid">
+            <div class="footer__container grid-cols-2 row-gap-1 grid gap-5">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
-                    <span class="footer__description">Restaurant</span>
+                    <a href="#" class="footer__logo h3-font-size first-color font-semi-bold">Tasty Food</a>
+                    <span class="footer__description block small-font-size">Restaurant</span>
                     <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="footer__social title-color mr-4"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social title-color mr-4"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social title-color mr-4"><i class='bx bxl-twitter'></i></a>
                     </div>
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
+                    <h3 class="footer__title h2-font-size title-color mb-2">Services</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Delivery</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                        <li><a href="#" class="footer__link inline-block text-color mb-1">Delivery</a></li>
+                        <li><a href="#" class="footer__link inline-block text-color mb-1">Pricing</a></li>
+                        <li><a href="#" class="footer__link inline-block text-color mb-1">Fast food</a></li>
+                        <li><a href="#" class="footer__link inline-block text-color mb-1">Reserve your spot</a></li>
                     </ul>
                 </div>
 
@@ -466,13 +466,13 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+            <p class="footer__copy text-center small-font-size text-color-light">&#169; 2024 Developed by Natali Sch</p>
         </footer>
 
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--========== MAIN JS ==========-->
-        <script src="/src/js/main.js"></script>
+        <script src="./src/js/main.js"></script>
     </body>
 </html>
