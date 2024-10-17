@@ -6,6 +6,7 @@ const showMenu = (toggleId, navId) =>{
     // Validate that variables exist
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
+            console.log("me tocaste")
             // We add the show-menu class to the div tag with the nav__menu class
             nav.classList.toggle('show-menu')
         })

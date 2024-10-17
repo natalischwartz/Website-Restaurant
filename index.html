@@ -20,23 +20,23 @@
         </a>
 
         <!--========== HEADER ==========-->
-        <header class="w-full fixed top-0 left-0 z-fixed body-color" id="header">
-            <nav class="max-w-1024 header-height flex justify-between items-center max-w-90 mx-4" style="width: calc(100% -2rem);">
+        <header class="bg-nav l-header w-full fixed top-0 left-0 z-10  body-color" id="header">
+            <nav class="  relative  nav bd-container max-w-1024  flex justify-between items-center max-w-90 mx-4 p-2" style="width: calc(100% -2rem);">
                 <a href="#" class=" nav__logo text-color font-medium">Tasty</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="mb-2"><a href="#home" class="text-color font-medium transition-all  nav__link active-link">Home</a></li>
-                        <li class="mb-2"><a href="#about" class="text-color font-medium transition-all nav__link ">About</a></li>
-                        <li class="mb-2"><a href="#services" class="text-color font-medium transition-all nav__link ">Services</a></li>
-                        <li class="mb-2"><a href="#menu" class="text-color font-medium transition-all nav__link">Menu</a></li>
-                        <li class="mb-2"><a href="#contact" class="text-color font-medium transition-all nav__link ">Contact us</a></li>
+                <div class="nav__menu z-fixed h-dvh" id="nav-menu">
+                    <ul class="nav__list flex justify-center flex-col items-center">
+                        <li class=" nav__item mb-2"><a href="#home" class="text-color font-medium transition-all  nav__link active-link">Home</a></li>
+                        <li class="nav__item mb-2"><a href="#about" class="text-color font-medium transition-all nav__link ">About</a></li>
+                        <li class="nav__item mb-2"><a href="#services" class="text-color font-medium transition-all nav__link ">Services</a></li>
+                        <li class=" nav__item mb-2"><a href="#menu" class="text-color font-medium transition-all nav__link">Menu</a></li>
+                        <li class=" nav__item mb-2"><a href="#contact" class="text-color font-medium transition-all nav__link ">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
-                <div class="text-color font-medium text-2xl cursor-pointer" id="nav-toggle">
+                <div class=" nav__toggle text-color font-medium text-2xl cursor-pointer" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
@@ -45,10 +45,10 @@
         <main class="l-main">
             <!--========== HOME ==========-->
             <section class="home" id="home">
-                <div class="home__container max-w-90 mx-4 grid gap-5" style="width: calc(100%-2rem);">
+                <div class="home__container bd-grid bd-container max-w-90 mx-4 grid gap-5" style="width: calc(100%-2rem);">
                     <div class="home__data">
-                        <h1 class="biggest-font-size first-color mb-1 ">Tasty food</h1>
-                        <h2 class="h1-font-size title-color mb-4">Try the best food of <br> the week.</h2>
+                        <h1 class= " home__title biggest-font-size first-color mb-1 mt-4">Tasty food</h1>
+                        <h2 class=" home__subtitle h1-font-size title-color mb-4">Try the best food of <br> the week.</h2>
                         <a href="#" class="button inline-block rounded-lg">View Menu</a>
                     </div>
     
@@ -57,11 +57,11 @@
             </section>
             
             <!--========== ABOUT ==========-->
-            <section class="about section max-w-90 mx-4" id="about" style="width: calc(100%-2rem);">
-                <div class="about__container  grid gap-5">
-                    <div class="text-center">
-                        <span class=" about__data text-center block first-color font-medium mb-1  about__initial">About us</span>
-                        <h2 class="text-center h1-font-size mb-3 title-color about__initial">We cook the best <br> tasty food</h2>
+            <section class="about section bd-container max-w-90 mx-4" id="about" style="width: calc(100%-2rem);">
+                <div class="about__container bd-grid  grid gap-5">
+                    <div class=" about__data text-center">
+                        <span class=" section__subtitle text-center block first-color font-medium mb-1  about__initial">About us</span>
+                        <h2 class=" section__title text-center h1-font-size mb-3 title-color about__initial">We cook the best <br> tasty food</h2>
                         <p class="about__description mb-3">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
                         <a href="#" class="button inline-block rounded-lg">Explore history</a>
                     </div>
@@ -71,11 +71,11 @@
             </section>
 
             <!--========== SERVICES ==========-->
-            <section class="services section max-w-90 mx-4" id="services" style="width: calc(100%-2rem);">
-                <span class="text-center block first-color font-medium mb-1">Offering</span>
-                <h2 class="text-center h1-font-size mb-3 title-color">Our amazing services</h2>
+            <section class="services section bd-container max-w-90 mx-4" id="services" style="width: calc(100%-2rem);">
+                <span class="section-subtitle text-center block first-color font-medium mb-1">Offering</span>
+                <h2 class="section-title text-center h1-font-size mb-3 title-color">Our amazing services</h2>
 
-                <div class="services__container row-gap-2 grid-cols-2  grid gap-5">
+                <div class="services__container bd-grid row-gap-2 grid-cols-2  grid gap-5">
                     <div class="services__content text-center">
                         <svg class="services__img mb-2" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249 
@@ -358,11 +358,11 @@
             </section>
 
             <!--========== MENU ==========-->
-            <section class="menu section max-w-90 mx-4" id="menu" style="width: calc(100%-2rem);">
-                <span class="text-center block first-color font-medium mb-1">Special</span>
-                <h2 class="text-center h1-font-size mb-3 title-color">Menu of the week</h2>
+            <section class="menu section bd-container max-w-90 mx-4" id="menu" style="width: calc(100%-2rem);">
+                <span class="section-subtitle text-center block first-color font-medium mb-1">Special</span>
+                <h2 class="section-title text-center h1-font-size mb-3 title-color">Menu of the week</h2>
 
-                <div class="menu__container grid-cols-dos justify-center grid gap-5">
+                <div class="menu__container bd-grid grid-cols-dos justify-center grid gap-5">
                     <div class="menu__content relative flex flex-col rounded-lg p-3">
                         <img src="src/img/plate1.png" alt="" class="menu__img  w-30 mb-2">
                         <h3 class="menu__name font-semi-bold  title-color normal-font-size  ">Barbecue salad</h3>
@@ -390,11 +390,11 @@
             </section>
 
             <!--===== APP =======-->
-            <section class="app section max-w-90 mx-4" style="width: calc(100%-2rem);">
-                <div class="app__container grid gap-5">
+            <section class="app section bd-container max-w-90 mx-4" style="width: calc(100%-2rem);">
+                <div class="app__container bd-grid grid gap-5">
                     <div class="app__data text-center">
-                        <span class="text-center block first-color font-medium mb-1 app__initial">App</span>
-                        <h2 class="text-center h1-font-size mb-3 title-color app__initial">App is aviable</h2>
+                        <span class="section-subtitle text-center block first-color font-medium mb-1 app__initial">App</span>
+                        <h2 class="section-title  text-center h1-font-size mb-3 title-color app__initial">App is aviable</h2>
                         <p class="app__description mb-5">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
                         <div class="app__stores mb-4">
                             <a href="#"><img src="src/img/app1.png" alt="" class="app__store"></a>
@@ -407,11 +407,11 @@
             </section>
 
             <!--========== CONTACT US ==========-->
-            <section class="contact section max-w-90 mx-4" id="contact" style="width: calc(100%-2rem);">
-                <div class="contact__container text-center grid gap-5">
+            <section class="contact section bd-container max-w-90 mx-4" id="contact" style="width: calc(100%-2rem);">
+                <div class="contact__container bd-grid text-center grid gap-5">
                     <div class="contact__data">
-                        <span class="text-center block first-color font-medium mb-1 contact__initial">Let's talk</span>
-                        <h2 class="text-center h1-font-size mb-3 title-color contact__initial">Contact us</h2>
+                        <span class="section-subtitle text-center block first-color font-medium mb-1 contact__initial">Let's talk</span>
+                        <h2 class="section-title text-center h1-font-size mb-3 title-color contact__initial">Contact us</h2>
                         <p class="contact__description mb-3">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                     </div>
 
@@ -423,8 +423,8 @@
         </main>
 
         <!--========== FOOTER ==========-->
-        <footer class="footer section max-w-90 mx-4" style="width: calc(100%-2rem);">
-            <div class="footer__container grid-cols-2 row-gap-1 grid gap-5">
+        <footer class="footer section bd-container max-w-90 mx-4" style="width: calc(100%-2rem);">
+            <div class="footer__container bd-grid grid-cols-2 row-gap-1 grid gap-5">
                 <div class="footer__content">
                     <a href="#" class="footer__logo h3-font-size first-color font-semi-bold">Tasty Food</a>
                     <span class="footer__description block small-font-size">Restaurant</span>
