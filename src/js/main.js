@@ -96,8 +96,10 @@ const iconTheme = 'bx-sun'
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+// We obtain the current theme that the interface has by validating the dark-theme class.
+//getCurrentTheme: retorna 'dark' si body contiene la clase dark-theme, de lo contrario, retorna 'light'.
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+//getCurrentIcon: retorna el icono actual dependiendo de si el botón tiene la clase iconTheme.
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 // We validate if the user previously chose a topic
@@ -113,6 +115,7 @@ themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
     // We save the theme and the current icon that the user chose
+    //Event Listener para alternar el tema: Cuando el usuario hace clic en el botón, el tema y el icono cambian, y la selección se guarda en localStorage.
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
